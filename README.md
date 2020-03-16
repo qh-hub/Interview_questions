@@ -1,6 +1,6 @@
 # Interview_questions
 面试知识点总结
-##mysql
+# mysql
 关系型数据库
 开源
 稳定性有保障
