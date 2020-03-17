@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4522c3bd-f091-4215-a4a3-efef2784f642" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +23,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="ServiceViewManager">
@@ -46,25 +48,52 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584345895934</updated>
-      <workItem from="1584345897461" duration="7083000" />
+      <workItem from="1584345897461" duration="10568000" />
     </task>
+    <task id="LOCAL-00001" summary="数据库相关内容">
+      <created>1584354042533</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584354042533</updated>
+    </task>
+    <task id="LOCAL-00002" summary="数据库相关内容">
+      <created>1584354166349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584354166349</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="数据库相关内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据库相关内容" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="334" y="6" key="CommitChangelistDialog2" timestamp="1584354041450">
+    <state x="334" y="6" key="CommitChangelistDialog2" timestamp="1584354165465">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="334" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584354041450" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1584354044887">
+    <state x="334" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584354165465" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1584354173094">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584354044887" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584351829663">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584354173094" />
+    <state x="449" y="204" key="git4idea.merge.GitPullDialog" timestamp="1584355125629">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584351829663" />
+    <state x="449" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1584355125629" />
+    <state x="178" y="23" key="new project wizard" timestamp="1584445094974">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="23" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1584445094974" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584445858377">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584445858377" />
   </component>
 </project>

@@ -136,4 +136,40 @@ MyISAM和InnoDB引擎都支持表级锁。
 7.减少和数据库的交互次数  
 8.能用in代替or就代替，in 后 值别超过500，or用不到索引  
 9.where从句中禁止对列进行函数转换和计算。  
+#线程相关
+##使用线程池的好处
+线程池.数据库连接池，http连接池等都是这个思想。  
+好处：  
+1.降低资源消耗：通过重复利用已创建的线程降低线程创建和销毁所造成的消耗  
+2.提高相应速度。当任务到达时，任务可以不需要等到线程创建就能立即执行。  
+3.提高线程的可管理性。线程是稀缺资源，如果无限制的创建，不仅会消耗系统资源，还会降低系统的稳定性，使用线程池可以同一分配，调优和监控。  
+##阿里编程规范
+1.创建线程池时指定有意义的线程名称。  
+2.线程资源必须通过线程池提供，不允许在应用中自行显性创建线程  
+3.线程池不允许通过Executors去创建，而是通过ThreadPoolExecutor的方式，  
+这种方式让写的人更加明确线程池的运行规则，规避资源耗尽的风险。
+###Executors返回的线程池对象弊端如下：
+1.FixedThreadPool和SingleThreadPool:  
+允许的请求队列长度为Integer.MAX_VALUE,可能会堆积大量的请求，从而导致OOM.  
+2.CachedThreadPool:  
+允许创建的线程数量为Integer.MAX_VALUE,可能会创建大量的线程，从而导致OOM。  
+3.自定义的ThreadLocal手动清理掉  
+###ThreadPoolExecutor类简单介绍  
+线程池实现类ThreadPoolExecutor是Executor框架最核心的类。  
+ThreadPoolExecutor参数  
+1.corePoolSize:核心线程数定义了最小可以同时运行的线程数量  
+2.maximumPoolSize:当队列中存放的任务打到队列容量的时候，当前可以运行的线程数量变为最大线程数  
+3.workQueue:当新任务来的时候会先判断当前运行的线程数量是否达到核心线程数，如果达到的话，新任务就会被存放在队列中。  
+4.keepAliveTime:当线程池中的线程数量大于corePoolSize的时候，如果没有新任务提交，核心线程外的线程不会被立即销毁，  
+而是会继续等待，等待时间超过了keepAliveTime时才会销毁;  
+5.unit:keepAliveTime参数的时间单位  
+6.threadFactory:executor创建新线程的时候会用到  
+7.handler:拒绝策略  
+7.1 ThreadPoolExecutor.AbortPolicy:抛出RejectedExecutionException来拒绝新任务的处理  
+7.2 ThreadPoolExecutor.CallerRunsPolicy:调用执行自己的线程运行任务，也就是直接在调用execute方法的线程中  
+运行被拒绝的任务，如果程序已经关闭，则丢弃该任务。  
+7.3 ThreadPoolExecutor.DiscardPolicy:不处理新任务，直接丢弃  
+7.4 ThreadPoolExecutor.DiscardOldestPolicy:此策略将丢弃最早的未处理的任务请求。
+
+
 
