@@ -9,5 +9,6 @@ public class SingletonTest {
     public static void main(String[] args) {
         Singleton3 singleton3 = Singleton3.INSTANCE;
         singleton3.doSomething();
+
     }
 }

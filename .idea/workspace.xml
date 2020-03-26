@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4522c3bd-f091-4215-a4a3-efef2784f642" name="Default Changelist" comment="">
+    <list default="true" id="4522c3bd-f091-4215-a4a3-efef2784f642" name="Default Changelist" comment="格式修改">
+      <change afterPath="$PROJECT_DIR$/interview.question/src/main/java/thread/Thread1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interview.question/src/main/java/thread/Thread2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interview.question/src/main/java/thread/Thread3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview.question/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/interview.question/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview.question/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/interview.question/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview.question/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/interview.question/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview.question/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/interview.question/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview.question/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/interview.question/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview.question/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/interview.question/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview.question/src/main/java/singleton/Singleton3.java" beforeDir="false" afterPath="$PROJECT_DIR$/interview.question/src/main/java/singleton/Singleton3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interview.question/src/main/java/singleton/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/interview.question/src/main/java/singleton/SingletonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +67,26 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="RunManager">
+    <configuration name="Thread3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread.Thread3" />
+      <module name="interview.question.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Thread3" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -79,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584345895934</updated>
       <workItem from="1584345897461" duration="13846000" />
-      <workItem from="1585016687892" duration="6488000" />
+      <workItem from="1585016687892" duration="19525000" />
     </task>
     <task id="LOCAL-00001" summary="数据库相关内容">
       <created>1584354042533</created>
@@ -167,18 +198,43 @@
     <option name="LAST_COMMIT_MESSAGE" value="格式修改" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#Project_Structure" timestamp="1585020199088">
+    <state x="361" y="71" key="#Project_Structure" timestamp="1585192899591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="361" y="71" key="#Project_Structure/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585192899591" />
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1585020199088" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1585193043143">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585193043143" />
     <state x="614" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585017687031">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="614" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1585017687031" />
-    <state x="334" y="6" key="CommitChangelistDialog2" timestamp="1585023134601">
+    <state x="334" y="6" key="CommitChangelistDialog2" timestamp="1585023318294">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="334" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585023134601" />
+    <state x="334" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585023318294" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1585193386399">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585193386399" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1585193386399">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585193386399" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1585193386399">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585193386399" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1585193386399">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585193386399" />
+    <state x="270" y="55" key="SettingsEditor" timestamp="1585193344851">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="55" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585193344851" />
     <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1585023136764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -191,9 +247,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="178" y="23" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1585017614035" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585023037401">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585194351413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585194351413" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585023037401" />
   </component>
 </project>

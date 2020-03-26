@@ -6,7 +6,7 @@
         - [两者比较](#两者比较)
     - [MVCC](#MVCC)
     - [《mysql高性能》上有这样一句话](#《mysql高性能》上有这样一句话)
-    - [索引](#索引)
+    - [索引](#索引) 
     - [缓存](#缓存)
     - [事务](#事务)
         - [并发事务带来哪些问题？](#并发事务带来哪些问题？)
@@ -20,7 +20,7 @@
         - [索引设计规范](#索引设计规范)
         - [sql开发规范](#Mysql开发规范)
 - [线程相关](#线程相关)
-    - [使用线程池的好处](#使用线程池的好处)
+    - [使用线程池的好处](#使用线程池的好处) 
     - [阿里编程规范](#阿里编程规范)
     - [Executors返回的线程池对象弊端如下](#Executors返回的线程池对象弊端如下)
     - [ThreadPoolExecutor类简单介绍](#ThreadPoolExecutor类简单介绍)        
@@ -319,4 +319,55 @@ System.out.println(list == copy); //true
  只加载一次。
 
 
+#面试没答出来的问题：
+## 1.Runnable Callable？
+区别：1.两者最大的区别，实现Callable接口的任务线程能返回执行结果，而实现Runnable接口的任务线程不能返回结果  
+Callable接口支持返回执行结果，此时需要调用FutureTask.get()方法实现，此方法会阻塞线程直到获取将来的结果，当不调用此方法时，主线程不会阻塞。  
+2.Callable接口实现类中run()方法的异常必须在内部处理掉，不能向上抛出。  
+## 2.wait和sleep的区别？
+1.来自不同的类Thread 和Object。Thread.sleep(111); Object.wait();
+2.sleep方法不释放锁，wait方法释放锁。
+3.wait,notify 和notify all 只能在同步控制方法或者同步控制块里使用，而sleep可以在任何地方使用。
+4.sleep必须获取异常。
+5.sleep是Thead类的静态方法。waits是Object的方法，也就是说可卡因对任意一个方法调用wait方法，调用wait方法将会将调用者的线程挂起，直到其它线程调用同一个对象的  
+notify方法才会出从新激活调用者。
+## 3.单例模式 为什么要进行两次判断？ 为什么要用同步锁？
+双检锁，又叫双重校验锁，综合了懒汉式和饿汉式两者的优缺点整合而成。  
+看上面代码实现中，特点是在synchronized关键字内外都加了一层 if 条件判断，
+这样既保证了线程安全，又比直接上锁提高了执行效率，还节省了内存空间。
+## 4.synchronized和lock的区别？
+类别      | synchronized     |Lock
+----         ----             ----
+存在层次   |Java的关键字，在jvm层面上  |是一个类
+锁的释放    |1.以获取锁的线程执行完同步代码，释放锁。2.线程执行发生异常，java会让线程释放锁。|在finally中必须释放锁，不然容易死锁
+锁的获取   |假设A线程获得锁，B线程等待，如果A线程阻塞，B线程会一致等待。| 分情况而定，Lock有多个获取锁的方式。可以分别尝试获取锁，线程可以不用一直等待。
+锁的状态    |无法判断           |可以判断
+锁得类型    |可重入 不可中断 非公平   |可重入 可判断 可公平
+性能        |少量同步         |大量同步
+## 5.linux 命令 如何查看文件夹的文件数？
+ls -l | tar 
+## 6.OutOfMemoryError 和Stack Over Flow？
+ OOM指的是堆内存耗尽。不断创建对象。  
+ StackOverFlower 是指栈内存溢出。没有退出条件的递归可以造成stackOverFlow  
+## 7.Mysql union和union all
+合并两条或多条查询结果。union会进行去重。union all 不会去重
+## 8.volatile关键字
+保证了变量的可见性。被volatile修饰的变量，如果值发生了改变，其它线程立马可见，避免出现脏读的现象。
+## 9.如何结束一个线程
+1.线程结束执行  
+2.使用boolean参数进行控制  
+3.使用stop方法来终止线程，可能会发生意想不到的情况。
+4.interrupt方法终止线程  
+## 10.注解的底层是如何实现的
+1.反射
+## 11.MySQL的函数有哪些？
+avg count max min sum concat(str1,str2,str3)  length(str) char_length(str)  
+now()
+## 12.Git命令行
+## 13.ArrayList容量增长
+初始大小为10.扩容规则为old*1.5，容量大小为2^30-8  
+HashMap初始大小为16。扩容规则为大于oldCapacity的最小的2的n次方整数  
+
+## 14.Map中获取不存在的key?
+返回结果是null
 
