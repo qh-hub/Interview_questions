@@ -227,11 +227,11 @@ GC Root到底时什么东西呢？哪些对象可以作为GC Root呢？
 3.方法区中常量引用的对象。final
 4.方法区栈中JNI（Native方法）引用的对象。
 
-####垃圾回收的主要方法
-1.标记清除算发
-2.复制算发
-3.标记清理法
-4.分代算发
+#### 垃圾回收的主要方法
+1.标记清除算法  
+2.复制算发  
+3.标记清理法  
+4.分代算发  
 # mybatis
 
 # 消息队列
@@ -367,8 +367,31 @@ now()
 ## 12.Git命令行
 ## 13.ArrayList容量增长
 初始大小为10.扩容规则为old*1.5，容量大小为2^30-8  
-HashMap初始大小为16。扩容规则为大于oldCapacity的最小的2的n次方整数  
+HashMap初始大小为16。扩容规则为大于oldCapacity的最小的2的n次方整数  最大容量
 
 ## 14.Map中获取不存在的key?
 返回结果是null
+
+## 15.重写equals方法为什么要重写hashcode
+因为重写了equals值相等，hashcode值必须相等  
+当时equals值不等，hashcode值可能会相同  
+## 16.HashMap和TreeMap
+HashMap 的key可以为null，TreeMap的key不能为null，因为TreeMap进行了排序。
+## restful风格
+1.状态码 200正常 403 没有权限 404 找不到资源
+2.Post Get Put Delete
+
+## HashMap 源码 
+相比于之前的版本，jdk1.8在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为8）时，将链表转化为红黑树，以减少搜索时间。  
+HashMap是基于哈希表（散列），实现Map接口的双列集合，数据结构是"链表散列"，也就是数组+链表    
+key唯一的value可以重复，允许存储null键null值，元素无序。  
+静态内部类Entry  参数 key value next hash  
+掉用put方法的时候，如果key存在key不会覆盖，新的value会替代旧的value，返回旧的value;如果key不存在，该方法返回null
+## 当两个对象的hashcode相同会发生什么？
+hashcode相同，说明两个对象HashMap数组的同一位置上，接着HashMap会遍历链表中的每个元素，通过key的equals方法来判断是否为同一个key，如果是同一个key，则新的value会覆盖旧的value，并且返回旧的value。如果不是同一个key，则存储在该位置上的链表的链头
+
+## 排序
+冒泡排序：把比较大或小的元素往数组最后移动。
+
+## 数据结构 
 
