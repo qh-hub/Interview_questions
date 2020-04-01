@@ -198,7 +198,10 @@ MyISAM和InnoDB引擎都支持表级锁。
 ThreadPoolExecutor参数  
 1.corePoolSize:核心线程数定义了最小可以同时运行的线程数量  
 2.maximumPoolSize:当队列中存放的任务打到队列容量的时候，当前可以运行的线程数量变为最大线程数  
-3.workQueue:当新任务来的时候会先判断当前运行的线程数量是否达到核心线程数，如果达到的话，新任务就会被存放在队列中。  
+3.workQueue:当新任务来的时候会先判断当前运行的线程数量是否达到核心线程数，如果达到的话，新任务就会被存放在队列中。 
+ArrayBlockingQueue 规定大小的阻塞队列 
+LinkedBlockingQueue  大小不固定的阻塞队列，若其构造时指定大小，生成的BlockingQueue有大小限制，如果不指定大小，由Integer.MAX_VALUE来决定。
+SynchronousQueue 特殊的阻塞队列，对其操作必须时放和取交替完成。也就是只能取走才能添加。
 4.keepAliveTime:当线程池中的线程数量大于corePoolSize的时候，如果没有新任务提交，核心线程外的线程不会被立即销毁，  
 而是会继续等待，等待时间超过了keepAliveTime时才会销毁;  
 5.unit:keepAliveTime参数的时间单位  
