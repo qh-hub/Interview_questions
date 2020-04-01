@@ -349,7 +349,7 @@ notify方法才会出从新激活调用者。
 ls -l | tar 
 ## 6.OutOfMemoryError 和Stack Over Flow？
  OOM指的是堆内存耗尽。不断创建对象。  
- StackOverFlower 是指栈内存溢出。没有退出条件的递归可以造成stackOverFlow  
+ StackOverFlower 是指栈内存溢出。没有退出条件的递归可以造成 stackOverFlow  
 ## 7.Mysql union和union all
 合并两条或多条查询结果。union会进行去重。union all 不会去重
 ## 8.volatile关键字
@@ -377,21 +377,37 @@ HashMap初始大小为16。扩容规则为大于oldCapacity的最小的2的n次�
 当时equals值不等，hashcode值可能会相同  
 ## 16.HashMap和TreeMap
 HashMap 的key可以为null，TreeMap的key不能为null，因为TreeMap进行了排序。
-## restful风格
+## 17.restful风格
 1.状态码 200正常 403 没有权限 404 找不到资源
 2.Post Get Put Delete
 
-## HashMap 源码 
+## 18.HashMap 源码 
 相比于之前的版本，jdk1.8在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为8）时，将链表转化为红黑树，以减少搜索时间。  
 HashMap是基于哈希表（散列），实现Map接口的双列集合，数据结构是"链表散列"，也就是数组+链表    
 key唯一的value可以重复，允许存储null键null值，元素无序。  
 静态内部类Entry  参数 key value next hash  
 掉用put方法的时候，如果key存在key不会覆盖，新的value会替代旧的value，返回旧的value;如果key不存在，该方法返回null
-## 当两个对象的hashcode相同会发生什么？
+## 19.当两个对象的hashcode相同会发生什么？
 hashcode相同，说明两个对象HashMap数组的同一位置上，接着HashMap会遍历链表中的每个元素，通过key的equals方法来判断是否为同一个key，如果是同一个key，则新的value会覆盖旧的value，并且返回旧的value。如果不是同一个key，则存储在该位置上的链表的链头
 
-## 排序
+## 20.排序
 冒泡排序：把比较大或小的元素往数组最后移动。
 
-## 数据结构 
-
+## 21.数据结构 
+## 22.内存溢出和内存泄漏
+内存泄漏memory leak 是指程序在申请内存后，无法释放已经申请的内存空间，一次内存泄漏似乎不会又大的影响  
+但是内存泄漏堆积的后果就是内存溢出。  
+内存溢出out of memory 是指程序申请内存时，没有足够的内存供申请者使用。  
+二者的关系  
+内存泄漏会导致内存溢出  
+内存泄漏是指你想系统申请分配内存进行使用（new对象），可是使用完以后却不归还，结果你申请的内存自己不能再次访问。  
+内存溢出是指：超过了jvm的最大容量。
+发生原因及解决方法：
+内存溢出：1.从数据库取出的数据过大  
+2.集合类又对对象的引用，使用完没有清空，jvm不能回收；  
+3.代码存在死循环或者重复过多的new对象。  
+4.jvm启动参数内存值设定过小 Xms 是初始容量 Xmx是最大容量  
+内存泄漏：  
+1.静态变量引用对象  
+2.长生命周期的对象持有短生命周期的引用，就很可能出现内存泄漏   
+ 
