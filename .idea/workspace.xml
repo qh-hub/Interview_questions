@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4522c3bd-f091-4215-a4a3-efef2784f642" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -118,7 +117,7 @@
       <workItem from="1585667355737" duration="46000" />
       <workItem from="1585667485403" duration="146000" />
       <workItem from="1585667643374" duration="37000" />
-      <workItem from="1585706939254" duration="1069000" />
+      <workItem from="1585706939254" duration="1442000" />
     </task>
     <task id="LOCAL-00001" summary="数据库相关内容">
       <created>1584354042533</created>
@@ -197,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585625208920</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="新增">
+      <created>1585708076094</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585708076094</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,11 +234,11 @@
     </state>
     <state x="614" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1585017687031" />
     <state x="1023" y="513" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1585664522583" />
-    <state x="557" y="10" key="CommitChangelistDialog2" timestamp="1585625208542">
+    <state x="557" y="10" key="CommitChangelistDialog2" timestamp="1585708075759">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="334" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585023318294" />
-    <state x="557" y="10" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1585625208542" />
+    <state x="557" y="10" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1585708075759" />
     <state x="1266" y="347" key="FileChooserDialogImpl" timestamp="1585664310526">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -262,11 +268,11 @@
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585193344851" />
     <state x="888" y="120" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1585664593391" />
-    <state x="602" y="248" key="Vcs.Push.Dialog.v2" timestamp="1585625210709">
+    <state x="602" y="248" key="Vcs.Push.Dialog.v2" timestamp="1585708083299">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585023136764" />
-    <state x="602" y="248" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1585625210709" />
+    <state x="602" y="248" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1585708083299" />
     <state x="965" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1585706939928">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -280,11 +286,11 @@
     </state>
     <state x="178" y="23" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1585017614035" />
     <state x="297" y="39" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1585664612308" />
-    <state x="718" y="246" width="1120" height="1152" key="search.everywhere.popup" timestamp="1585625016402">
+    <state x="718" y="246" width="1120" height="1152" key="search.everywhere.popup" timestamp="1585708224914">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585194351413" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585023037401" />
-    <state x="718" y="246" width="1120" height="1152" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1585625016402" />
+    <state x="718" y="246" width="1120" height="1152" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1585708224914" />
   </component>
 </project>
