@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4522c3bd-f091-4215-a4a3-efef2784f642" name="Default Changelist" comment="mysql索引相关总结" />
+    <list default="true" id="4522c3bd-f091-4215-a4a3-efef2784f642" name="Default Changelist" comment="顺序问题">
+      <change afterPath="$PROJECT_DIR$/Spring.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,10 +70,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\Interview_questions" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Thread3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -120,7 +130,9 @@
       <workItem from="1585667485403" duration="146000" />
       <workItem from="1585667643374" duration="37000" />
       <workItem from="1585706939254" duration="3393000" />
-      <workItem from="1610107254863" duration="311000" />
+      <workItem from="1610107254863" duration="1057000" />
+      <workItem from="1612178169521" duration="881000" />
+      <workItem from="1612180068426" duration="834000" />
     </task>
     <task id="LOCAL-00001" summary="数据库相关内容">
       <created>1584354042533</created>
@@ -227,11 +239,18 @@
       <option name="project" value="LOCAL" />
       <updated>1610107498877</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="顺序问题">
+      <created>1610107710249</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610107710249</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -243,6 +262,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="数据库相关内容" />
@@ -254,12 +274,13 @@
     <MESSAGE value="新增" />
     <MESSAGE value="核心线程数的设置" />
     <MESSAGE value="mysql索引相关总结" />
-    <option name="LAST_COMMIT_MESSAGE" value="mysql索引相关总结" />
+    <MESSAGE value="顺序问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="顺序问题" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610107545512">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610107712188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610107545512" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610107712188" />
   </component>
 </project>
